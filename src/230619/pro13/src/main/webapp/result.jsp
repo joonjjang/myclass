@@ -19,7 +19,7 @@
       dispatch.forward(request, response);
     */
 %>
-   <jsp:forward  page="login.jsp" />
+   <jsp:forward  page="login.jsp" /> //  forward문은 현재 요청을 다른 JSP 페이지나 서블릿으로 전달합니다. 이를 통해 페이지 간의 이동이 가능합니다.
 <%	
   }
 %>
