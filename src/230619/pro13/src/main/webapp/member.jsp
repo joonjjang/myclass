@@ -4,7 +4,7 @@
    request.setCharacterEncoding("UTF-8");  
 %>
 <jsp:useBean  id="m"  class="sec02.ex01.MemberBeen"  scope="page"/> //가장 많이 활용되는 jsp액션이며
-								// useBean 은 자바 빈(Java Bean)(객체)을 생성하거나 가져와서 사용할 수 있도록 합니다. 
+		      // 클래스를 설정하는 부분 빈을 공유	     // useBean 은 자바 빈(Java Bean)(객체)을 생성하거나 가져와서 사용할 수 있도록 합니다. 
                                                                 // 자바 빈은 재사용 가능한 컴포넌트로서 로직을 포함하고 데이터를 처리하는 역할을 합니다.
 <jsp:setProperty name="m" property="*" />
 
