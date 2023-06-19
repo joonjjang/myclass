@@ -13,8 +13,8 @@ request.setCharacterEncoding("utf-8");
 <body>
   안녕하세요. 쇼핑몰 중심 JSP 시작입니다!!!
 <br>
-<jsp:include  page="duke_image.jsp"  flush="true" >
-   <jsp:param name= "name"  value="듀크" />
+<jsp:include  page="duke_image.jsp"  flush="true" > //jsp include는 단순히 페이지와 jsp 를 연동하는 역활을 함
+   <jsp:param name= "name"  value="듀크" />            
    <jsp:param name="imgName"  value="duke.png" />
    <jsp:param name="tr"  value="호랑이.jpg" />
 </jsp:include>
