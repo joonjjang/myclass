@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+<script>
+	function fun1() {
+		$.ajax({
+
+			type : "get",
+			dataType : "text",
+			url : "http://localhost:8090/pro17/ajax",
+
+			data : {
+				'name' : 'hong'
+			},
+			/* data : {"arr" : ['mon',1,'hi',true]} */
+
+			success : function(data, text) {
+				$('#name').append(data);
+
+			},
+			error : function(data, text) {
+				alert("초비상 에러발생");
+
+			},
+			complete : function(data, text) {
+				alert("완");
+
+			},
+
+		});
+	}
+</script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<input type="button" onclick="fun1()" value="서버에 데이터 전송">
+	<div id="name"></div>
+	
+</body>
+</html>
